@@ -1,0 +1,197 @@
+:root{
+    --orange-color : #DA722C;
+    --blue-color: #057ADA;
+    --light-blue-color: #E8F7FB;
+    --dark-blue-color:#023047;
+    --dark-color : #070917;
+    --violet-color : #6F7DFB;
+}
+
+/* universal selector */
+
+*,::before,::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+
+.wrapper{
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+.btn{
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+}
+
+.btn.dark{
+    background: var(--dark-blue-color);
+}
+
+.btn.light{
+    background: var(--orange-color);
+}
+
+.btn.enroll-icon::before{
+    content: url("Images/PencilAlt.svg");
+    position: absolute;
+    top: 55%;
+    left: 12px;
+    transform: translateY(-50%);
+}
+
+/* Header */
+
+header{
+    background: linear-gradient(180deg,#6F7DFB 0%,#023047 100% );
+    height: 100vh;
+    width: 100%;
+}
+
+/* nav bar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 1;
+}
+
+nav .logo{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul a{
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* hero section */
+
+.hero-section{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 200px;
+    position: relative;
+    color: #fff;
+}
+
+.hero-section .left h1{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    margin-bottom: 0;
+}
+
+.hero-section .left p{
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 900; */
+    font-size: 16px;
+    line-height: 200%;
+    width: 458px;
+    margin-bottom: 30px;
+}
+
+.hero-section .right img{
+    height: 400px;   
+}
+
+.hero-section .left{
+    flex-grow: 1;
+}
+
+
+/* Achievements cards */
+
+.acheivement-card{
+    color: var(--dark-blue-color);
+    position: absolute;
+}
+
+.acheivement-card .content{
+    border-radius: 25px;
+    background: #fff;
+    padding: 8px 32px;
+    position: relative;
+    z-index: 1;
+}
+
+.acheivement-card .content div{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.acheivement-card.student-enroll{
+    left:50%;
+    top: 250px;
+}
+
+.acheivement-card.overall-rating{
+    top: 470px;
+    left: 50% ;
+}
+
+.acheivement-card h3{
+    font-family: "poppins", sans-serif;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.acheivement-card img{
+    height: 32px;
+    margin-right: 15px;
+}
+
+.acheivement-card p{
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -12px;
+    margin-bottom:5px ;
+}
+
+.acheivement-card .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg,#6F7DFB 0%,#023047 100% );
+    top: 6px;
+    left: 6px;
+    border-radius: 25px;
+}

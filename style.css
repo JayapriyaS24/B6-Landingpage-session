@@ -386,3 +386,248 @@ section p{
     gap: 70px;
 }
 
+
+/*app section*/
+.app-section{
+    text-align: center;
+ }
+ .app-section .app-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 24px;
+ }
+ .app-section .app-btn{
+    padding: 16px 32px;
+    background: #000000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 310px;
+ }
+ .app-section .app-btn span{
+    font-weight: normal;
+    font-size: 20px;
+    color: #ffffff;
+ }
+ /*footer*/
+ footer {
+    background: var(--dark-color);
+    color: #fff;
+    margin-top: 100px;
+    padding: 70px 0;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  footer h3 {
+    color: var(--orange-color);
+  }
+  
+  footer ul {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  footer ul li {
+    margin: 16px 0;
+  }
+  
+  footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+  }
+  
+  footer .social {
+    margin-left: 20px;
+  }
+  
+  footer .social a {
+    margin-right: 28px;
+  }
+  
+  footer form {
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+  }
+  
+  footer form input {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 160px 8px 32px;
+    border: none;
+    width: 100%;
+    color: #000000;
+  }
+  
+  footer form .submit-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--dark-blue-color);
+    border-radius: 8px;
+    padding: 8px 32px;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  footer .copyright {
+    margin-top: 36px;
+  }
+  /*Media Queries*/
+  @media (max-width: 1100px) {
+    /*header and buttons */
+    .btn {
+      padding: 12px 32px;
+    }
+  
+    .wrapper {
+      padding: 0 100px;
+    }
+  
+    nav {
+      width: 100%;
+      left: 0;
+      right: 0;
+      padding: 36px 100px;
+    }
+    header,
+    .hero-section,
+    header .wrapper {
+      max-height: 1100px;
+    }
+  
+    .hero-section {
+      flex-direction: column;
+    }
+  
+    .hero-section .left {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .hero-section .left .btn {
+      align-self: flex-start;
+    }
+  
+    .hero-section .left h1 {
+      font-size: 50px;
+      line-height: 125%;
+    }
+  
+    .hero-section .right {
+      position: absolute;
+      bottom: 0;
+    }
+  
+    .hero-section .right img {
+      height: 580px;
+    }
+  
+    .hero-section .achievement-card {
+      position: relative;
+      margin-bottom: 80px;
+    }
+  
+    .achievement-card.students-enrolled,
+    .achievement-card.overall-rating {
+      left: unset;
+      top: unset;
+    }
+  
+    .hero-section .achievement-cards {
+      align-self: flex-start;
+      margin: 40px;
+    }
+  
+    h2 {
+      font-size: 40px;
+    }
+  /*testimonial section */
+    .testimonials-section {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 50px;
+    }
+  
+    .testimonials-section .testimonial-card {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  
+    .testimonials-section .testimonial-card:last-child::before {
+      top: -40px;
+      left: 60px;
+      height: calc(100% + 80px);
+    }
+  
+    .testimonials-section .testimonial-card:last-child {
+      transform: translateX(0px);
+      margin-bottom: 0;
+    }
+  
+    .testimonials-section .desktop-btn {
+      display: none;
+    }
+    .testimonials-section .right {
+      order: 1;
+    }
+  
+    .testimonials-section .left {
+      order: 2;
+    }
+  
+    .testimonials-section .right p {
+      display: inline;
+    }
+  
+    .testimonials-section h2 {
+      margin-bottom: 20px;
+    }
+    /*courses section */
+    .courses-section .course-cards{
+      flex-direction: column;
+      gap: 80px;
+    }
+    .courses-section .course-card{
+      margin: 0;
+    }
+    .courses-section h2{
+      margin-bottom: 42px;
+    }
+    .courses-section .course-card img{
+      height: 350px;
+      object-fit: cover;
+    }
+    .courses-section .course-card h3{
+      font-size: 24px;
+    }
+    .courses-section .wrapper .btn{
+         right: 100px;
+    }
+    .courses-section .course-card:last-child{
+      margin-bottom: 50px;
+    }
+    footer .links-container{
+      grid-template-columns: 1fr 1fr;
+    }
+    footer .links-container .links:last-child{
+      grid-column: 1/3;
+    }
+  }

@@ -69,7 +69,7 @@ nav{
     width: 1134px;
     top: 0;
     padding: 36px 0;
-    z-index: 1;
+    z-index: 0;
 }
 
 nav .logo{
@@ -195,3 +195,194 @@ nav ul a{
     left: 6px;
     border-radius: 25px;
 }
+
+/* Testinomial section */
+
+section{
+    margin-top: 100px;
+}
+
+h4{
+    font-family: "Raleway", sans-serif;
+    font-size: 60px;
+    margin: 0;
+    color: var(--dark-blue-color);
+    line-height: 120%;
+
+}
+
+section p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 120%;
+    color: var(--dark-color);
+    margin: 10px 0;
+}
+
+.testimonial-section{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.testimonial-section .testimonial-card{
+    position: relative;
+    width: 443px;
+    background-color: #fff;
+    box-shadow: 0px 9px 40px rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.testimonial-section .testimonial-card::before{
+    content: "";
+    width: 28px;
+    position: absolute;
+    height: 40px;
+    background-color: var(--dark-blue-color);
+    top: -40px;
+    left: 95px;
+    border-radius: 25px 25px 0 0;
+}
+
+.testimonial-section .testimonial-card:last-child::before{
+    border-radius:  0 0 25px 25px;
+    height: 280px;
+    left: 80px;
+    top:-50px;
+    z-index: -1;
+}
+
+
+.testimonial-section .testimonial-card .content{
+    font-family: "Raleway" , sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 150%;
+    background: var(--violet-color);    
+    color: #fff;
+    border-radius: 25px;
+    padding: 25px 32px;
+}
+
+.testimonial-section .testimonial-card:last-child .content{
+    background: var(--orange-color);
+}
+
+
+.testimonial-section .testimonial-card .info{
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 25px;
+}
+
+.testimonial-section .testimonial-card .info h4{
+    font-family: "Raleway" , sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 0;
+    color: var(--dark-blue-color);
+}
+
+.testimonial-section .testimonial-card .info p{
+    font-family: "Raleway" , sans-serif;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 120%;
+    color: var(--dark-blue-color);
+}
+
+.testimonial-section .testimonial-card img{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    right: 32px;
+    bottom: 18px;
+}
+
+.testimonial-section .testimonial-card:last-child{
+    transform: translateX(20px);
+}
+
+.testimonial-section .features{
+    margin-bottom: 30px;
+}
+
+
+
+/* Courses Section */
+
+.course-section{
+    background: linear-gradient(180deg,#6F7DFB 0%,#022233 100%  );
+    padding: 70px 0;
+    padding-bottom: 120px;
+}
+
+.course-section h2{
+    text-align: center;
+}
+
+.course-section .course-cards img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+.course-section .course-card{
+    background: #fff;
+    border-radius: 25px;
+    padding: 0 33px;
+    margin: 40px 0;
+    position: relative;
+}
+
+.course-section .course-card::after{
+    content: "";
+    height: 9px;
+    position: absolute;
+    background: var(--dark-color);
+    left: 33px;
+    right: 33px;
+    border-radius: 25px;
+    bottom: 0;
+}
+
+.course-section .course-card h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--dark-blue-color);
+}
+
+.course-section .course-card .info{
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-section .course-card .duration{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--dark-blue-color);
+    position: relative;
+    padding-left: 20px;
+    white-space: nowrap;
+}
+
+.course-section .course-card .duration::before{
+    content: url("Images/Clock.png");
+    position: absolute;
+    left: -15px;
+    top: 2px;
+}
+
+.course-section .course-cards{
+    display: flex;
+    gap: 70px;
+}
+
